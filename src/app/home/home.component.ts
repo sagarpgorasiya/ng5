@@ -10,15 +10,15 @@ export class HomeComponent implements OnInit {
   itemCount: number=4;
   btnText:string='Add an Item';
   goalText:string="My Fist Life Goal";
-goals=[];
+  goals=[];
 
-  constructor() { }
+  constructor() {   
+  }
 
   ngOnInit() {
     this.itemCount= this.goals.length;
   }
-  additem(){
-    alert();
+  additem(){    
      this.goals.push(this.goalText);
      this.goalText='';
      this.itemCount=this.goals.length;
