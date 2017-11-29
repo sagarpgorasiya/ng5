@@ -12,12 +12,13 @@
       <form>
         <input type="text" class="txt" name="item" placeholder="Life Goal.." [(ngModel)]="goalText">
         <!-- <br><span>{{goalText}}</span> -->
+        
         <input type="submit" class="btn" [value]="btnText" (click)="additem()">
       </form>
     </div>
     <div class="col">
-      <p class="life-container" ngFor="Let goal of goals">
-       {{ goals }}
+      <p class="life-container" *ngFor="let goal of goals">
+       {{ goal }}
       </p>
     </div>   
   </div>
