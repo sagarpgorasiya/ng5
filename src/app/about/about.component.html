@@ -1,8 +1,12 @@
 <p>
   This is a Link, <a href="" (click)="sendMeHome()">Home</a>
 </p>
-<ul>
-  <li *ngFor ="let goal for goals">
+<p class="life-container" *ngFor="let goal of goals; let i= index" (click)="removeItem(i)">
     {{ goal }}
-  </li>
-</ul>
+   </p>
+
+<ul>
+    <li *ngFor="let goal of goals">
+      {{ goal }}
+    </li>
+  </ul>

@@ -26,3 +26,25 @@ a{
     color: #fff;
     text-decoration: none;
 }
+
+.table{
+    background: #74ebe5;
+    border: 1px solid ;
+    padding: 3em;
+    margin: 2em;
+    font-family: 'Raleway','Arial';
+    color: rgb(15, 15, 15);
+}
+
+.table tbody tr td{
+    border: 1px solid ;
+    padding: 5px;
+}
+th{
+    border: 1px solid ;
+    padding: 5px;
+}
+
+.table-hover tr td:hover{
+    background: #25ada4;
+}

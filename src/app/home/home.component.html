@@ -20,5 +20,28 @@
       <p class="life-container" *ngFor="let goal of goals; let i= index" (click)="removeItem(i)">
        {{ goal }}
       </p>
+      <ul>
+        <li *ngFor="let goal of goals">
+          {{ goal }}
+        </li>
+      </ul>
+    </div>
+    <div>
+        <table class="table table-responsive table-hover">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of records">
+            <td>{{ data.CategoryID }}</td>
+            <td>{{ data.CategoryName }}</td>
+            <td>{{ data.Description }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>   
   </div>
